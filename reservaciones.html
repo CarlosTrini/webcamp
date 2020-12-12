@@ -1,0 +1,446 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CDMXWebCamp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="site-header">
+      <div class="hero">
+        <div class="contenido-header contenedor">
+          <nav class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </nav>
+          <div class="informacion-evento">
+            <p class="fecha"><i class="fas fa-calendar-alt"></i> 10 de diciembre</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Ciudad de México</p>
+          </div> <!-- informacion-evento -->
+          <a href="index.html">
+            <h1 class="titulo">
+              <p>CDMX</p>
+              <p>Web</p>
+              <p>Camp</p>
+            </h1>
+          </a>
+          <p class="slogan">la mejor conferencia de <span>diseño web</span> </p>
+        </div> <!-- contenido-header -->
+      </div> <!-- hero -->
+    </div>
+
+    <!-- +++++++++++++++++++++++++  BARRA DE NAVEGACION  ++++++++++++++++++++++++++++++++++++ -->
+
+    <div class="barra">
+      <div class="contenedor-general ">
+        <div class="contenido-barra">
+          <div class="responsivo">
+            <div class="logo">
+              <img src="img/logo.svg" alt="">
+            </div>
+
+            <div class="menu-responsive">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <nav class="navegacion-principal">
+            <a href="conferencia.html">conferencia</a>
+            <a href="calendario.html">calendario</a>
+            <a href="invitados.html">invitados</a>
+            <a href="reservaciones.html">reservaciones</a>
+          </nav>
+        </div><!-- CONTENIDO-BARRA -->
+
+      </div> <!-- CONTENEDOR GENERAL-->
+    </div> <!-- BARRA-->
+
+    <!-- +++++++++++++++++++++++++  SECCION FORMULARIO    ++++++++++++++++++++++++++++++++++++ -->
+
+    <div class="contenedor-general seccion">
+      <h2>registro de usuarios</h2>
+
+      <form action="" id="registro" method="POST" class="registro">
+        <div class="datos-usuario" id="datos-usuario">
+
+          <div class="campo">
+            <label for="nombre">nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"  class="no-borde">
+          </div><!-- campo -->
+
+          <div class="campo">
+            <label for="apellido">apellido:</label>
+            <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" class="no-borde">
+          </div><!-- campo -->
+
+          <div class="campo">
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email" placeholder="correo@correo.com" class="no-borde">
+          </div><!-- campo -->
+
+        </div><!-- DATOS USUARIO -->
+        <div class="error" id="error-usuario">
+          <p>Verificar que los campos esten correctos: en Nombre y Apellido solo caracteres alfabeticos. En correo verificar que se tenga un "@" y dominio</p>
+        </div>
+        <!-- +++++++++++++++++++++++++  PAQUETE   ++++++++++++++++ -->
+        <div class="paquetes" id="paquetes">
+          <h3>Elige la cantidad de boletos</h3>
+
+          <div class="contenedor-precios">
+            <div class="tarjetas">
+              <h3>pase por día (viernes)</h3>
+              <ul class="detalles-precios">
+                <li class="precio">$30</li>
+                <li><i class="fas fa-check"></i> bocadillos gratis</li>
+                <li><i class="fas fa-check"></i> conferencias</li>
+                <li><i class="fas fa-check"></i> talleres</li>
+              </ul>
+              <div class="orden" id="orden">
+                <label for="pase_por_dia">boletos deseados</label>
+                <input type="number" name="pase_por_dia" id="pase_por_dia" min="0" size="3" placeholder="0">
+              </div><!-- ORDEN-->
+            </div>
+            <!--TARJETA PRECIO-->
+
+            <div class="tarjetas">
+              <h3>pase por tres días</h3>
+              <ul class="detalles-precios">
+                <li class="precio">$50</li>
+                <li><i class="fas fa-check"></i> bocadillos gratis</li>
+                <li><i class="fas fa-check"></i> conferencias</li>
+                <li><i class="fas fa-check"></i> talleres</li>
+              </ul>
+              <div class="orden" id="orden">
+                <label for="pase_completo">boletos deseados</label>
+                <input type="number" name="pase_completo" id="pase_completo" min="0" size="3" placeholder="0">
+              </div><!-- ORDEN-->
+            </div>
+            <!--TARJETA PRECIO-->
+
+            <div class="tarjetas">
+              <h3>pase por 2 días ( v & s)</h3>
+              <ul class="detalles-precios">
+                <li class="precio">$40</li>
+                <li><i class="fas fa-check"></i> bocadillos gratis</li>
+                <li><i class="fas fa-check"></i> conferencias</li>
+                <li><i class="fas fa-check"></i> talleres</li>
+              </ul>
+              <div class="orden" id="orden">
+                <label for="pase_dos_dias">boletos deseados</label>
+                <input type="number" name="pase_dos_dias" id="pase_dos_dias" min="0" size="3" placeholder="0">
+              </div><!-- ORDEN-->
+            </div>
+            <!--TARJETA PRECIO-->
+          </div>
+          <!--CONNTENEDOR PRECIOS-->
+        </div><!-- PAQUETES -->
+
+        <!-- +++++++++++++++++++++++++  EVENTOS   ++++++++++++++++ -->
+
+        <div id="eventos" class="eventos ">
+          <h3>Elige tus talleres</h3>
+          <div class="caja">
+            <div id="viernes" class="contenido-dia dias">
+              <h4>Viernes</h4>
+              <div class="tcs">
+                <p>Talleres:</p>
+                <div class="contenidos">
+                  <label><input type="checkbox" name="registro[]" id="taller_01" value="taller_01"><time>10:00</time>
+                    Responsive Web Design</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_02" value="taller_02"><time>12:00</time>
+                    Flexbox</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_03" value="taller_03"><time>14:00</time>
+                    HTML5 y CSS3</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_04" value="taller_04"><time>17:00</time>
+                    Drupal</label>
+                  <label><input type="checkbox" name="registro[]" id="taller_05" value="taller_05"><time>19:00</time>
+                    WordPress</label>
+                </div> <!-- CONTENIDOS -->
+              </div>
+              <div class="conferencias">
+                <div class="tcs">
+                  <p>Conferencias:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="conf_01" value="conf_01"><time>10:00</time> Como
+                      ser
+                      Freelancer</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_02" value="conf_02"><time>17:00</time>
+                      Tecnologías del Futuro</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_03" value="conf_03"><time>19:00</time>
+                      Seguridad en la Web</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+              <div class="seminarios">
+                <div class="tcs">
+                  <p>Seminarios:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="sem_01" value="sem_01"><time>10:00</time> Diseño
+                      UI
+                      y UX para móviles</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+            </div>
+            <!--#viernes-->
+            <div id="sabado" class="contenido-dia dias ">
+              <h4>Sábado</h4>
+              <div>
+                <div class="tcs">
+                  <p>Talleres:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="taller_06" value="taller_06"><time>10:00</time>
+                      AngularJS</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_07" value="taller_07"><time>12:00</time>
+                      PHP
+                      y MySQL</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_08" value="taller_08"><time>14:00</time>
+                      JavaScript Avanzado</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_09" value="taller_09"><time>17:00</time>
+                      SEO
+                      en Google</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_10" value="taller_10"><time>19:00</time>
+                      De
+                      Photoshop a HTML5 y CSS3</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_11" value="taller_11"><time>21:00</time>
+                      PHP
+                      Medio y Avanzado</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+              <div>
+                <div class="tcs">
+                  <p>Conferencias:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="conf_04" value="conf_04"><time>10:00</time> Como
+                      crear una tienda online que venda millones en pocos días</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_05" value="conf_05"><time>17:00</time> Los
+                      mejores lugares para encontrar trabajo</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_06" value="conf_06"><time>19:00</time>
+                      Pasos
+                      para crear un negocio rentable</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+              <div>
+                <div class="tcs">
+                  <p>Seminarios:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="sem_02" value="sem_02"><time>10:00</time>
+                      Aprende a
+                      Programar en una mañana</label>
+                    <label><input type="checkbox" name="registro[]" id="sem_03" value="sem_03"><time>17:00</time> Diseño
+                      UI
+                      y UX para móviles</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+
+            </div>
+            <!--#sabado-->
+            <div id="domingo" class="contenido-dia dias ">
+              <h4>Domingo</h4>
+              <div>
+                <div class="tcs">
+                  <p>Talleres:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="taller_12" value="taller_12"><time>10:00</time>
+                      Laravel</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_13" value="taller_13"><time>12:00</time>
+                      Crea
+                      tu propia API</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_14" value="taller_14"><time>14:00</time>
+                      JavaScript y jQuery</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_15" value="taller_15"><time>17:00</time>
+                      Creando Plantillas para WordPress</label>
+                    <label><input type="checkbox" name="registro[]" id="taller_16" value="taller_16"><time>19:00</time>
+                      Tiendas Virtuales en Magento</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+              <div>
+                <div class="tcs">
+                  <p>Conferencias:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="conf_07" value="conf_07"><time>10:00</time> Como
+                      hacer Marketing en línea</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_08" value="conf_08"><time>17:00</time> ¿Con
+                      que
+                      lenguaje debo empezar?</label>
+                    <label><input type="checkbox" name="registro[]" id="conf_09" value="conf_09"><time>19:00</time>
+                      Frameworks y librerias Open Source</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+              <div>
+                <div class="tcs">
+                  <p>Seminarios:</p>
+                  <div class="contenidos">
+                    <label><input type="checkbox" name="registro[]" id="sem_04" value="sem_04"><time>14:00</time>
+                      Creando
+                      una App en Android en una tarde</label>
+                    <label><input type="checkbox" name="registro[]" id="sem_05" value="sem_05"><time>17:00</time>
+                      Creando
+                      una App en iOS en una tarde</label>
+                  </div> <!-- CONTENIDOS -->
+                </div>
+              </div>
+            </div>
+            <!--#domingo-->
+          </div>
+          <!--.caja-->
+        </div>
+        <!--#EVENTOS-->
+
+        <!-- +++++++++++++++++++++++++  RESUMEN   ++++++++++++++++ -->
+
+        <div class="resumen" id="resumen">
+          <h3>pagos y extras</h3>
+          <div class="caja-pagos">
+            <div class="extras">
+              <div class="orden">
+                <label for="camisa">camiseta del evento $10 (-7%)</label>
+                <input type="number" name="camisa" id="camisa" min="0" size="3" placeholder="0">
+              </div><!-- ORDEN-->
+
+              <div class="orden">
+                <label for="etiquetas">etiquetas de lenguajes de programación $2 (C/U)</label>
+                <input type="number" name="etiquetas" id="etiquetas" min="0" size="3" placeholder="0">
+              </div><!-- ORDEN-->
+
+              <div class="orden">
+                <label for="regalo">elige un regalo</label>
+                <select name="regalo" id="regalo">
+                  <option value="">-- selecciona un regalo --</option>
+                  <option value="eti">Etiqueta</option>
+                  <option value="pul">Pulsera</option>
+                  <option value="plu">Pluma</option>
+                </select>
+              </div><!-- ORDEN-->
+
+              <input type="button" id="calcular" class="boton" value="Calcular">
+            </div> <!-- EXTRAS -->
+            <!-- +++++++++++++++++++++++++  CALCULAR   ++++++++++++++++ -->
+
+            <div class="calcular">
+
+              <div class="total">
+                <p class="resumen-datos">Resumen:</p>
+                <div class="lista-productos" id="lista-productos"></div>
+
+                <p class="total-pagar">Total:</p>
+                <div class="suma-total" id="suma-total"></div>
+
+              </div> <!-- TOTAL -->
+
+            </div> <!-- CALCULAR -->
+
+
+          </div> <!--CAJA-->
+        </div><!--RESUMEN-->
+
+        <div class="">
+          <input type="submit" id="btnRegistro" value="Registrarse" class="boton">
+        </div>
+
+        
+        <!--error general-->
+      </form>
+    </div>
+
+    <!-- +++++++++++++++++++++++++  FOOTER  ++++++++++++++++++++++++++++++++++++ -->
+
+    <footer class="contenedor-footer">
+      <div class="contenedor-general contenido-footer">
+        <div class="info-footer">
+          <h3>sobre <span>CDMXWebCamp</span></h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum repudiandae, neque dignissimos odio,
+            officiis architecto quisquam tenetur eveniet provident dolor numquam fuga corrupti modi libero sapiente
+            dolorem minus laboriosam.</p>
+        </div>
+        <div class="info-footer">
+          <h3>últimos <span>tweets</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias odit voluptate aliquam suscipit totam iure
+            distinctio ea porro repudiandae mollitia. <span>#webcamp</span> Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Rem, aspernatur. <span>&copy;web</span> Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Tenetur, expedita? </p>
+        </div>
+        <div class="info-footer">
+          <h3>redes <span>sociales</span></h3>
+          <nav class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </nav>
+        </div>
+      </div>
+      <!--contenedor-->
+      <p class="derechos">todos los derechos reservados CDMXWebCamp 2020</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+
+    </script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+
+</html>

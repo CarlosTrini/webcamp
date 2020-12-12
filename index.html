@@ -1,0 +1,477 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <title>CDMXWebCamp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <div class="site-header">
+      <div class="hero">
+        <div class="contenido-header contenedor">
+          <nav class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </nav>
+          <div class="informacion-evento">
+            <p class="fecha"><i class="fas fa-calendar-alt"></i> 10 de diciembre</p>
+            <p class="ciudad"><i class="fas fa-map-marker-alt"></i> Ciudad de México</p>
+          </div> <!-- informacion-evento -->
+          <a href="index.html">
+            <h1 class="titulo letras"> CDMXWebCamp
+              <!-- <p>CDMX</p>
+              <p>Web</p>
+              <p>Camp</p> -->
+            </h1>
+          </a>
+          <p class="slogan">la mejor conferencia de <span>diseño web</span> </p>
+        </div> <!-- contenido-header -->
+      </div> <!-- hero -->
+    </div>
+
+    <!-- +++++++++++++++++++++++++  BARRA DE NAVEGACION  ++++++++++++++++++++++++++++++++++++ -->
+
+    <div class="barra">
+      <div class="contenedor-general ">
+        <div class="contenido-barra">
+          <div class="responsivo">
+            <div class="logo">
+              <img src="img/logo.svg" alt="">
+            </div>
+
+            <div class="menu-responsive">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <nav class="navegacion-principal ">
+            <a href="conferencia.html">conferencia</a>
+            <a href="calendario.html">calendario</a>
+            <a href="invitados.html">invitados</a>
+            <a href="reservaciones.html">reservaciones</a>
+          </nav>
+        </div><!-- CONTENIDO-BARRA -->
+
+      </div> <!-- CONTENEDOR GENERAL-->
+    </div> <!-- BARRA-->
+
+    <!-- +++++++++++++++++++++++++  SECCION CONFERENCIA    ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="seccion contenedor-general">
+      <div class="contenido-conferencia">
+        <h2>la mejor conferencia de diseño web en español</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores enim saepe asperiores, ipsum harum,
+          alias, aspernatur reprehenderit qui voluptatem assumenda molestias. Sit impedit fugiat ad deleniti atque
+          expedita, minus quod corrupti incidunt vero et quo, pariatur fuga dolores quasi soluta repellendus cumque
+          autem, reiciendis molestiae neque asperiores. Expedita, eveniet.</p>
+      </div>
+    </section>
+
+    <!-- +++++++++++++++++++++++++  SECCION DEL PROGRAMA    ++++++++++++++++++++++++++++++++++++ -->
+    <section class="contenedor-programa">
+
+      <div class="contenedor-video">
+        <video autoplay muted loop poster="img/img/bg-talleres.jpg">
+          <source src="img/VideosFondo/video/video.mp4" type="video/mp4">
+          <source src="img/VideosFondo/video/video.webm" type="video/webm">
+          <source src="img/VideosFondo/video/video.ogv" type="video/ogg">
+        </video>
+      </div><!-- CONTENEDOR VIDEO-->
+
+      <div class="contenedor-programas">
+        <div class="contenedor-general">
+          <div class="seccion contenido-programa">
+            <h2>programa del evento</h2>
+            <div class="contenedor-nav-programas">
+              <nav class="navegacion-programas">
+            <a href="#talleres"><i class="fas fa-code"></i> talleres</a>
+                <a href="#conferencias"><i class="far fa-comments"></i> conferencias</a>
+                <a href="#seminarios"><i class="fas fa-university"></i> seminarios</a>
+              </nav>
+            </div>
+
+
+            <div id="talleres" class="info-evento ocultar">
+              <div class="detalle-evento">
+                <h3>Curso de HTML5, CSS Y Javascript</h3>
+                <p><i class="far fa-clock"></i> 14:00</p>
+                <p><i class="fas fa-calendar-alt"></i> 10 de diciembre</p>
+                <p><i class="fas fa-user-tie"></i> juan pablo de la torre</p>
+              </div><!-- DETALLES DEL EVENTO-->
+
+              <div class="detalle-evento">
+                <h3>responsive web design</h3>
+                <p><i class="far fa-clock"></i> 14:00</p>
+                <p><i class="fas fa-calendar-alt"></i> 10 de diciembre</p>
+                <p><i class="fas fa-user-tie"></i> juan pablo de la torre</p>
+              </div><!-- DETALLES DEL EVENTO-->
+            </div>
+            <!--TALLERES-->
+
+
+            <div id="conferencias" class="info-evento ocultar">
+              <div class="detalle-evento">
+                <h3>Cómo ser freelancer</h3>
+                <p><i class="far fa-clock"></i> 17:00</p>
+                <p><i class="fas fa-calendar-alt"></i> 10 de diciembre</p>
+                <p><i class="fas fa-user-tie"></i> susana sanchez</p>
+              </div><!-- DETALLES DEL EVENTO-->
+
+              <div class="detalle-evento">
+                <h3>tecnologias del futuro</h3>
+                <p><i class="far fa-clock"></i> 14:00</p>
+                <p><i class="fas fa-calendar-alt"></i> 11 de diciembre</p>
+                <p><i class="fas fa-user-tie"></i> harold garcía</p>
+              </div><!-- DETALLES DEL EVENTO-->
+            </div><!-- CONFERENCIAS-->
+
+
+            <div id="seminarios" class="info-evento ocultar">
+              <div class="detalle-evento">
+                <h3>Aprender a programar en una mañana</h3>
+                <p><i class="far fa-clock"></i> 14:00</p>
+                <p><i class="fas fa-calendar-alt"></i> 12 de diciembre</p>
+                <p><i class="fas fa-user-tie"></i> susana rivera</p>
+              </div><!-- DETALLES DEL EVENTO-->
+
+              <div class="detalle-evento">
+                <h3>Primer diseño de tu página web</h3>
+                <p><i class="far fa-clock"></i> 14:00</p>
+                <p><i class="fas fa-calendar-alt"></i> 12 de diciembre</p>
+                <p><i class="fas fa-user-tie"></i> rafael bautista</p>
+
+              </div><!-- DETALLES DEL EVENTO-->
+            </div><!-- SEMINARIOS-->
+            <div class="contenedor-boton">
+              <a href="#" class="boton">Ver todos</a>
+            </div>
+          </div> <!-- INFO EVENTO -->
+
+        </div>
+        <!--SECCION -->
+      </div> <!-- CONTENEDOR GENERAL-->
+      </div><!-- CONTENEDOR PROGRAMAS-->
+    </section>
+
+    <!-- +++++++++++++++++++++++++  SECCION DE LOS INVITADOS    ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class=" contenedor-general contenedor-invitados">
+      <div class="seccion">
+        <h2> nuestros invitados</h2>
+      </div>
+
+      <ul class="lista-invitados">
+        <li>
+          <div class="invitados">
+            <img src="img/img/invitado1.jpg" alt="Invitado1">
+            <p>rafael bautista</p>
+          </div>
+        </li>
+        <li>
+          <div class="invitados">
+            <img src="img/img/invitado2.jpg" alt="Invitado2">
+            <p>shari herrera</p>
+          </div>
+
+        </li>
+        <li>
+          <div class="invitados">
+            <img src="img/img/invitado3.jpg" alt="Invitado3">
+            <p>gregorio sanchez</p>
+          </div>
+
+        </li>
+        <li>
+          <div class="invitados">
+            <img src="img/img/invitado4.jpg" alt="Invitado4">
+            <p>susana rivera</p>
+          </div>
+
+        </li>
+        <li>
+          <div class="invitados">
+            <img src="img/img/invitado5.jpg" alt="Invitado5">
+            <p>harold garcía</p>
+          </div>
+
+        </li>
+        <li>
+          <div class="invitados">
+            <img src="img/img/invitado6.jpg" alt="Invitado6">
+            <p>susana sanchez</p>
+          </div>
+
+        </li>
+      </ul>
+
+    </section>
+
+    <!-- +++++++++++++++++++++++++  SECCION DEL CONTADOR    ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="contador">
+      <div class="contenedor-contador">
+        <ul class="contenedor-numeros contador-invitados">
+          <li class="numero">
+            <p></p>invitados
+          </li>
+          <li class="numero">
+            <p></p>talleres
+          </li>
+          <li class="numero">
+            <p></p>días
+          </li>
+          <li class="numero">
+            <p></p>conferencias
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- +++++++++++++++++++++++++  SECCION DEL PRECIOS    ++++++++++++++++++++++++++++++++++++ -->
+    <section class="seccion contenedor-general">
+      <h2>precios</h2>
+
+      <div class="contenedor-precios">
+        <div class="tarjetas">
+          <h3>pase por un día</h3>
+          <ul class="detalles-precios">
+            <li class="precio">$30</li>
+            <li><i class="fas fa-check"></i> bocadillos gratis</li>
+            <li><i class="fas fa-check"></i> conferencias</li>
+            <li><i class="fas fa-check"></i> talleres</li>
+          </ul>
+          <a href="" class="boton">ver más</a>
+        </div>
+        <!--TARJETA PRECIO-->
+
+        <div class="tarjetas">
+          <h3>pase por tres días</h3>
+          <ul class="detalles-precios">
+            <li class="precio">$50</li>
+            <li><i class="fas fa-check"></i> bocadillos gratis</li>
+            <li><i class="fas fa-check"></i> conferencias</li>
+            <li><i class="fas fa-check"></i> talleres</li>
+          </ul>
+          <a href="" class="boton">ver más</a>
+        </div>
+        <!--TARJETA PRECIO-->
+
+        <div class="tarjetas">
+          <h3>pase por dos días</h3>
+          <ul class="detalles-precios">
+            <li class="precio">$40</li>
+            <li><i class="fas fa-check"></i> bocadillos gratis</li>
+            <li><i class="fas fa-check"></i> conferencias</li>
+            <li><i class="fas fa-check"></i> talleres</li>
+          </ul>
+          <a href="" class="boton">ver más</a>
+        </div>
+        <!--TARJETA PRECIO-->
+      </div>
+      <!--CONNTENEDOR PRECIOS-->
+
+    </section>
+
+    <!-- +++++++++++++++++++++++++  SECCION DE UBICACIÓN    ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="mapa" id="mapa">
+    </section>
+
+    <!-- +++++++++++++++++++++++++  SECCION DE TESTIMONIALES    ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="seccion contenedor-general">
+      <h2>testimoniales</h2>
+
+      <div class="contenedor-testimoniales">
+        <blockquote class="tarjetas">
+          <p class="texto-testimonio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure blanditiis enim
+            voluptas id impedit itaque, aliquam, nam voluptatem delectus vel molestias! Aperiam, officia laborum ab
+            quaerat distinctio harum.</p>
+          <footer class="datos-testimonial">
+            <img src="img/img/invitado1.jpg" alt="Primer Testimonial" class="img-testimonial">
+            <div>
+              <cite class="nombre-autor">oswaldo aponte escobedo</cite>
+              <p class="profesion-autor">diseñador en @prisma</p>
+            </div>
+          </footer>
+        </blockquote>
+        <!--TARJETAS-->
+
+        <blockquote class="tarjetas">
+          <p class="texto-testimonio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure blanditiis enim
+            voluptas id impedit itaque, aliquam, nam voluptatem delectus vel molestias! Aperiam, officia laborum ab
+            quaerat distinctio harum.</p>
+          <footer class="datos-testimonial">
+            <img src="img/img/invitado1.jpg" alt="Primer Testimonial" class="img-testimonial">
+            <div>
+              <cite class="nombre-autor">oswaldo aponte escobedo</cite>
+              <p class="profesion-autor">diseñador en @prisma</p>
+            </div>
+          </footer>
+        </blockquote>
+        <!--TARJETAS-->
+
+        <blockquote class="tarjetas">
+          <p class="texto-testimonio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure blanditiis enim
+            voluptas id impedit itaque, aliquam, nam voluptatem delectus vel molestias! Aperiam, officia laborum ab
+            quaerat distinctio harum.</p>
+          <footer class="datos-testimonial">
+            <img src="img/img/invitado1.jpg" alt="Primer Testimonial" class="img-testimonial">
+            <div>
+              <cite class="nombre-autor">oswaldo aponte escobedo</cite>
+              <p class="profesion-autor">diseñador en @prisma</p>
+            </div>
+          </footer>
+        </blockquote>
+        <!--TARJETAS-->
+
+      </div>
+      <!--CONNTENEDOR TESTIMONIALES-->
+
+    </section>
+
+
+    <!-- +++++++++++++++++++++++++  SECCION DE NEWSLETTER   ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="contenedor-newsletter">
+      <div class=" contenido-newsletter">
+        <div class="detalles-newsletter">
+          <p class="capitalizar">regístrate al newsletter</p>
+          <h1 class="titulo">
+            <p>CDMX</p>
+            <p>Web</p>
+            <p>Camp</p>
+          </h1>
+          <a href="" class="boton-blanco">regístrate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- +++++++++++++++++++++++++  SECCION DE CUENTA REGRESIVA   ++++++++++++++++++++++++++++++++++++ -->
+
+    <section class="seccion">
+      <h2>faltan</h2>
+      <div class="contenedor-contador contador-dias">
+        <ul class="contenedor-numeros ">
+          <li class="numero">
+            <p id="dias"></p>días
+          </li>
+          <li  class="numero">
+            <p id="horas"></p>horas
+          </li>
+          <li class="numero">
+            <p id="minutos"></p>minutos
+          </li>
+          <li class="numero">
+            <p id="segundos"></p>segundos
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- +++++++++++++++++++++++++  FOOTER  ++++++++++++++++++++++++++++++++++++ -->
+
+    <footer class="contenedor-footer">
+      <div class="contenedor-general contenido-footer">
+        <div class="info-footer">
+          <h3>sobre <span>CDMXWebCamp</span></h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum repudiandae, neque dignissimos odio,
+            officiis architecto quisquam tenetur eveniet provident dolor numquam fuga corrupti modi libero sapiente
+            dolorem minus laboriosam.</p>
+        </div>
+        <div class="info-footer">
+          <h3>últimos <span>tweets</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias odit voluptate aliquam suscipit totam iure
+            distinctio ea porro repudiandae mollitia. <span>#webcamp</span> Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Rem, aspernatur. <span>&copy;web</span> Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Tenetur, expedita? </p>
+        </div>
+        <div class="info-footer">
+          <h3>redes <span>sociales</span></h3>
+          <nav class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </nav>
+        </div>
+      </div>
+      <!--contenedor-->
+      <p class="derechos">todos los derechos reservados CDMXWebCamp 2020</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+
+    </script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+      <script src="js/jquery.lettering.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/lightbox.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/mapa.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
+
+</html>
